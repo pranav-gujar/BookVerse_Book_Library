@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse</title>
+    <link rel="stylesheet" href="/css/books.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/">Books</a>
+        </div>
+    </nav>
+
+    <header>
+        <form action="/books/add" method="get">
+            <button>Add Book</button>
+        </form>
+        <input type="text" id="searchBar" placeholder="Search for a book..." oninput="searchBooks()">
+    </header>
+
+    <div id="booksContainer" class="book-cards">
+        <% books.forEach(book => { %>
+            <div class="card">
+                <div class="card-info">
+                    <h2><%= book.title %></h2>
+                    <p>Author: <%= book.author %></p>
+                    <p>Genre: <%= book.genre %></p>
+                    <p>Publisher: <%= book.publisher %></p>
+                    <p>Price: <%= book.price %></p>
+                    <p>Borrowed: <span id="borrowed-status-<%= book._id %>"><%= book.borrowed ? 'Yes' : 'No' %></span></p>
+                    <button id="borrow-button-<%= book._id %>" onclick="borrowBook('<%= book._id %>')" <%= book.borrowed ? 'disabled' : '' %>>Borrow</button>
+                    <button id="unborrow-button-<%= book._id %>" onclick="unborrowBook('<%= book._id %>')" <%= book.borrowed ? '' : 'disabled' %>>Unborrow</button>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    
+    
+    
+    
+    
+    <footer class="footer">
+        <p>&copy; 2024 BookVerse. All rights reserved by Mr Pranav Gujar.</p>
+    </footer>
+
+    <script src="/js/books.js"></script>
+</body>
+</html>

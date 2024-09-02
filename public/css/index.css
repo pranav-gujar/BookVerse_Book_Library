@@ -1,0 +1,137 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar-brand a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+.landing-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.explore-btn {
+    background-color: #00d4ff;
+    color: #121212;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.explore-btn:hover {
+    background-color: #00a3cc;
+}
+
+.personal-info {
+    margin-top: 40px;
+}
+
+.personal-info h2 {
+    font-size: 2.5rem;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.personal-info ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc; 
+    text-align: center;
+}
+
+.personal-info li {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.social-links {
+    margin-top: 5px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #1f1f1f;
+    padding: 5px;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Heart animation styles */
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    color: #00BFFF; 
+    animation: fall 3s linear forwards;
+    z-index: 1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}

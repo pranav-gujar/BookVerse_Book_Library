@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar-brand a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Button */
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00d4ff;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #00a6cc;
+}
+
+/* Search Bar*/
+header input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #333;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+header input[type="text"]:focus {
+    border-color: #00d4ff;
+    outline: none;
+}
+
+
+.book-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    margin: 10px;
+}
+
+.card p {
+    margin: 5px 10px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1f1f1f;
+    padding: 5px;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
