@@ -1,5 +1,5 @@
 # BookVerse
-BookVerse developed as part of my web development internship at **CodeAlpha**. It represents the third task of my internship, focusing on creating a full-stack web application using Node.js, Express.js, MongoDB, and EJS.
+BookVerse developed focusing on creating a full-stack web application using Node.js, Express.js, MongoDB, and EJS.
 BookVerse is a web application designed to manage and browse a collection of books. It allows users to add new books, search for specific titles, and manage borrowing and returning books.
 
 ## Features
