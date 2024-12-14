@@ -20,8 +20,8 @@ BookVerse is a web application designed to manage and browse a collection of boo
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/bookverse.git
-    cd bookverse
+    git clone https://github.com/pranav-gujar/BookVerse_Book_Library.git
+    cd BookVerse_Book_Library
     ```
 
 2. **Install Dependencies**:
